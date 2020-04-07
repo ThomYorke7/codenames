@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codenames</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div id="header-container">
+        <h1>Nome in Codice</h1>
+    </div>
+
+    <div id="main-container">
+        <div id="settings-container">
+            <div id="scenario-container">
+                <label for="scenario">Scegli uno scenario <input id="scenario" type="number" min="1" max="25"
+                        placeholder="1-25" required autocomplete="off"></label>
+                <label id="caricamento-scenario"><button type="submit"
+                        id="caricamento-scenario-btn">Carica</button></label>
+            </div>
+
+            <div id="squadre-container">
+                <h3>Squadre</h3>
+                <form id=squadre-form>
+                    <div id="giocatori-container">
+                        <input class="nome-giocatore" type="text" placeholder="Nome" required autocomplete="off">
+                    </div>
+                    <p id="aggiungi-giocatore">+ Aggiungi Giocatore</p>
+                    <button id="genera-squadre-btn" type="submit">Genera</button>
+                </form>
+            </div>
+
+            <div id="mappe-container">
+                <h3>Sei un suggeritore?</h3>
+                <label for="mappa">Scegli una mappa <input id="mappa" type="number" min="1" max="36" placeholder="1-36"
+                        required autocomplete="off"></label>
+                <label id="caricamento-mappa"><button type="submit" id="caricamento-mappa-btn">Carica</button></label>
+                <div id="mappa-container"></div>
+            </div>
+
+            <a id="regolamento"
+                href="http://www.craniocreations.it/wp-content/uploads/2016/06/NOMI-IN-CODICE-regolamento.pdf"
+                target="blank_">Regolamento</a>
+        </div>
+
+        <div id="griglia-container"></div>
+    </div>
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+
+</html>
