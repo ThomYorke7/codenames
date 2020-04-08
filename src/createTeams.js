@@ -7,8 +7,10 @@ const createTeamsGrid = (playersArray) => {
     const teamGrid = document.createElement("div")
     teamGrid.id = "team-grid"
     const redTeam = document.createElement("div")
+    redTeam.id = "red-team"
     redTeam.textContent = "Squadra Rossa"
     const blueTeam = document.createElement("div")
+    blueTeam.id = "blue-team"
     blueTeam.textContent = "Squadra Blu"
     teamGrid.appendChild(redTeam)
     teamGrid.appendChild(blueTeam)

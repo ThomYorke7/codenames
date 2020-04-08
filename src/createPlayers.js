@@ -37,8 +37,6 @@ const createPlayers = () => {
             createTeamsGrid(namesArray)
         })
     })()
-
-
 }
 
 

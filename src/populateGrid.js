@@ -13,7 +13,6 @@ const populateGrid = () => {
 
     const getScenario = () => {
         const scenario = document.getElementById("scenario").value
-        console.log(scenario)
         return scenario
     }
 
@@ -29,7 +28,6 @@ const populateGrid = () => {
     scenarioBtn.addEventListener("click", () => {
         loadScenario()
     })
-
 }
 
 
