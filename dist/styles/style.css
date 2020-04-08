@@ -40,7 +40,7 @@ input[type="number"] {
     display: flex;
     flex-direction: column;
     padding-left: 1rem;
-    width: 23%;
+    width: 25%;
 }
 
 .nome-giocatore {
