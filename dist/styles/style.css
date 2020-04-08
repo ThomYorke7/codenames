@@ -49,6 +49,7 @@ input[type="number"] {
 
 #aggiungi-giocatore {
     cursor: pointer;
+    width: fit-content;
 }
 
 #team-grid {
