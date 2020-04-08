@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -5,7 +7,9 @@
 html {
     width: 100%;
     height: 100%;
-    font-size: 16px;
+    font-size: 17px;
+    font-family: 'Special Elite', cursive;
+    background-image: url(../images/linedpaper.png);
 }
 
 h3 {
@@ -14,12 +18,13 @@ h3 {
 
 button {
     cursor: pointer;
+    
 }
 
 #header-container {
     width: 25%;
     padding-left: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
 }
 
 input[type="number"] {
@@ -35,7 +40,7 @@ input[type="number"] {
     display: flex;
     flex-direction: column;
     padding-left: 1rem;
-    width: 22%;
+    width: 23%;
 }
 
 .nome-giocatore {
@@ -49,6 +54,14 @@ input[type="number"] {
 #team-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+#red-team {
+    color: red;
+}
+
+#blue-team {
+    color:blue
 }
 
 #mappe-container {
@@ -71,17 +84,61 @@ input[type="number"] {
 
 #griglia-container{
     position: absolute;
+    padding: 0.5rem;
     right: 0.5rem;
     top: 0;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
+    column-gap: 0.3rem;
+    row-gap: 0.3rem;
     width: 75%;
-    height: 100vh;
+    height: 100%;
 }
 
 .card-container {
-    background-size: contain;
+    
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.selectorsContainer {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.blue-selector, .red-selector, .gray-selector, .black-selector {
+    background-position: center;
+    background-size: cover;
+}
+
+.blue-selector {
+    background-image: url(../images/AGENTI/blue1.jpg);
+}
+
+.red-selector {
+    background-image: url(../images/AGENTI/red2.jpg);
+}
+
+.black-selector {
+    background-image: url(../images/AGENTI/black.jpg);
+}
+
+.gray-selector {
+    background-image: url(../images/AGENTI/gray1.jpg);
+}
+
+.remove-choice {
+    background-image: url(../images/removeicon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 40%
 }
