@@ -11,13 +11,7 @@ const populateGrid = () => {
         }
     })()
 
-    const getScenario = () => {
-        const scenario = document.getElementById("scenario").value
-        return scenario
-    }
-
     const loadScenario = () => {
-        let scenario = getScenario();
         let id = 1
         Object.values(gridContainer.children).forEach(card => {
             card.style.backgroundImage = `url(./images/SCENARIO${scenario}/IMG${id}.png)`
@@ -26,7 +20,10 @@ const populateGrid = () => {
     }
 
     scenarioBtn.addEventListener("click", () => {
-        loadScenario()
+        const scenario = document.getElementById("scenario").value
+        if (scenario) {
+            loadScenario()
+        }
     })
 }
 

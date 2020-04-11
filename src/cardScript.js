@@ -56,7 +56,7 @@ const cardListener = () => {
 
     for (let i = 0; i < cards.length; i++) {
         cards[i].addEventListener("click", (e) => {
-            if (e.target.classList.contains("card-container") && !e.target.hasChildNodes()) {
+            if (e.target.classList.contains("card-container") && !e.target.hasChildNodes() && e.target.style.backgroundImage) {
                 createChoices(e.target)
             }
         })
